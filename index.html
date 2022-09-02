@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Fast BMI Calculator</title>
+        <meta name="description" content="Interactive BMI or bmr calculator .">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="stylesheet2.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <button class="menu" id="bmi-menu" href="#"> Calculate BMI</button>
+                <button class="menu" id="bmr-menu" href="#"> Calculate BMR</button>
+            </header>
+
+            <main class="main"> 
+                <section class="formularz">
+                    <form name="input"  method="get">
+                        <h2 id="title">BMI Calculator</h2>
+                       <div id="formula">
+                                <p class="text">Height</p>
+                                <input type="text" id="height"><br><br>
+                                <p class="text">Weight</p>
+                                <input type="text" id="weight"><br><br>
+                                <input type="button" id="button" onClick="BMI()"value="Calculate">
+                                <p id="output"></p><br> 
+                                <span id='comment'></span><br><br>
+                                <a id="diet" href="#"></a>
+                        </div> 
+                    </form>
+                </section>
+            </main> 
+        </div>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
