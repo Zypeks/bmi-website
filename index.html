@@ -24,13 +24,26 @@
                     <form name="input"  method="get">
                         <h2 id="title">BMI Calculator</h2>
                        <div id="formula">
+                        <legend>Choose your gender:</legend>
+                          <label>Male
+                            <input type="radio" name="radio" class="male"  checked>
+                            <span class="checkmark"></span>
+                          </label>
+                          <label>Female
+                            <input type="radio" name="radio" id="female">
+                            <span class="checkmark"></span>
+                            </label>
+                          </label>
+                          <p class="text">Age</p>
+                          <input type="number" id="age"><br><br>
                                 <p class="text">Height</p>
-                                <input type="text" id="height"><br><br>
+                                <input type="number" id="height"min><br><br>
                                 <p class="text">Weight</p>
-                                <input type="text" id="weight"><br><br>
-                                <input type="button" id="button" onClick="BMI()"value="Calculate">
+                                <input type="number" id="weight"><br><br>
+                                <input type="button" id="button" onClick="functionBMI()"value="Calculate"><br><br>
+                                <span id='comment'></span>
                                 <p id="output"></p><br> 
-                                <span id='comment'></span><br><br>
+
                                 <a id="diet" href="#"></a>
                         </div> 
                     </form>

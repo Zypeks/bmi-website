@@ -1,0 +1,124 @@
+﻿* {
+	box-sizing: border-box;
+}
+body {
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	font-family: sans-serif;
+	text-align: center;
+	background-image : linear-gradient(120deg, #3a0e1b46,#8f7eb6be);
+	min-height:100vh;
+}
+input[type="radio"] {
+	appearance: none;
+  
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #999;
+	transition: 0.2s all linear;
+
+	position: relative;
+	top: 4px;
+  }
+  input[type="radio"]::before 
+  {
+	border-radius: 50%;
+	transform: scale(0);
+	transition: 120ms transform ease-in-out;
+	box-shadow: inset 1em 1em var(--form-control-color);
+  }
+  input[type="radio"]:checked::before {
+	transform: scale(1);
+  }
+  input[type="radio"]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+}
+  input[type="radio"]:checked 
+  {
+	border: 6px solid black;
+  }
+  
+.menu
+{
+	margin-left:10%;
+	margin-right:10%;
+	text-decoration:dotted;
+	background: linear-gradient(120deg, #da275d1e,#fafafa ) var(--p,0)/var(--p,0) no-repeat;
+	transition: .4s,background-position 0s;
+	font-size: 25px;
+	BORder:none;
+}	
+.menu:hover {
+  --p: 100%;
+  color: #fff;
+}
+.formularz
+{
+	width:500px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	background-color:#fff;
+	transform: translate( -50%, -50%);
+	padding:20px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 20px #ee5253;
+}
+h2
+{
+	font-size:30px;
+	font-weight:600;
+}
+.text
+{
+	text-align:left;
+	margin-left:130px;
+}
+#weight, #height, #age
+{
+	color:#ab2b2b;
+	text-align:left;
+	font-size:20px;
+	outline:none;
+	border:none;
+	background:none;
+	border-bottom: 1px solid #341f53;
+	width:200px;
+}
+#weight:focus, #height:focus, #age:focus
+{
+	border-bottom: 3px solid lightblue;
+	width:300px;
+	transition:0.4s;
+}
+#comment
+{
+	font-family:'Lucida Sans';
+	font-size:20px;
+	font-weight:300;
+
+}
+#button
+{
+	font-family:Georgia;
+	margin-top:10px;
+	border:none;
+	color:#fff;
+	background-image:linear-gradient(120deg, #DA275D,#6c3899);
+	padding:10px;
+	width:100px;
+	border-radius:30px;
+	outline: none;
+	cursor:pointer;
+}
+#button:hover{
+	box-shadow:1px 1px 10px #341F97;	
+}
+#diet
+{
+	font-size:20px;
+}
